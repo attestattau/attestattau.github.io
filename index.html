@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Аттестация қоржыны</title>
+<meta name="description" content="Педагогтерді аттестаттау: пилоттық жоба (№159-НҚ), нормативтік құжаттар, бақылау парақтары және санат талаптары.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600;800&family=Golos+Text:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#f5ecdb; --surface:#fffaf1; --ink:#3a2513; --muted:#7a5f45;
+  --line:#e2cfae; --brown:#6e3f1c; --brown-soft:#f0dfc3; --gold:#b98415; --gold-soft:#f6e6bd; --red:#a3321f;
+  --ok:#3f7a2e;
+  --f-display:"Alegreya", "PT Serif", Georgia, serif;
+  --f-body:"Golos Text", "Segoe UI", Roboto, Arial, sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#1b130b; --surface:#261b11; --ink:#f3e6d0; --muted:#bfa584;
+  --line:#463420; --brown:#e3b06b; --brown-soft:#3a2a19; --gold:#efc04f; --gold-soft:#3a2d12; --red:#ec8a6f; --ok:#9fd27f;
+  color-scheme:dark}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+img{max-width:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15.5px;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.orn{height:22px;background:var(--gold);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='22' viewBox='0 0 64 22'%3E%3Cpath d='M32 20 V12 C32 4 22 2 18 7 C14 12 20 17 24 13 C27 10 24 7 22 8 M32 12 C32 4 42 2 46 7 C50 12 44 17 40 13 C37 10 40 7 42 8 M0 20 H64 M4 20 C4 15 9 14 10 17 M60 20 C60 15 55 14 54 17' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x center/64px 22px;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='22' viewBox='0 0 64 22'%3E%3Cpath d='M32 20 V12 C32 4 22 2 18 7 C14 12 20 17 24 13 C27 10 24 7 22 8 M32 12 C32 4 42 2 46 7 C50 12 44 17 40 13 C37 10 40 7 42 8 M0 20 H64 M4 20 C4 15 9 14 10 17 M60 20 C60 15 55 14 54 17' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x center/64px 22px}
+header.top{background:var(--brown-soft);border-bottom:1px solid var(--line)}
+header.top .wrap{padding-block:22px 18px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.shanyrak{width:58px;height:58px;flex:none;color:var(--gold)}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.1;margin:0;color:var(--brown);text-wrap:balance}
+.sub{margin:4px 0 0;color:var(--muted);font-size:.95rem;max-width:62ch}
+nav.tabs{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav.tabs .wrap{display:flex;gap:6px;align-items:center;overflow-x:auto;padding-block:10px;scrollbar-width:thin}
+.grp{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap;padding:0 4px 0 2px}
+.sep{width:1px;align-self:stretch;background:var(--line);margin:0 6px;flex:none}
+.tab{font:inherit;font-size:.9rem;white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer;text-decoration:none}
+.tab:hover{border-color:var(--brown)}
+.tab[aria-selected="true"]{background:var(--brown);border-color:var(--brown);color:var(--surface)}
+.tab.cat[aria-selected="true"]{background:var(--gold);border-color:var(--gold);color:#1a1405}
+.tab:focus-visible,button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+main .wrap{padding-block:28px 56px}
+section.pane{display:grid;gap:22px}
+h2{font-family:var(--f-display);font-weight:800;font-size:1.75rem;line-height:1.15;margin:0;color:var(--brown);text-wrap:balance}
+h3{font-family:var(--f-display);font-weight:600;font-size:1.2rem;margin:0 0 8px;color:var(--ink)}
+.lead{margin:0;color:var(--muted);max-width:70ch}
+p{margin:0 0 10px;max-width:70ch}
+a{color:var(--brown)}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;min-width:0}
+.box.gold{border-color:var(--gold);background:var(--gold-soft)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+ul.clean{margin:0;padding-left:20px}
+ul.clean li{margin:4px 0}
+.docs{display:grid;gap:10px}
+.doc{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.doc .no{font-family:var(--f-display);font-weight:800;color:var(--gold);font-size:1.05rem;min-width:62px;font-variant-numeric:tabular-nums}
+.doc .t{font-weight:600}
+.doc .d{color:var(--muted);font-size:.9rem;margin-top:2px}
+.doc a{white-space:nowrap;font-weight:600;font-size:.9rem}
+@media (max-width:560px){.doc{grid-template-columns:1fr}.doc .no{min-width:0}}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+thead th{background:var(--brown-soft);color:var(--ink);font-weight:600}
+tr:last-child td{border-bottom:0}
+.pill{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 9px;border-radius:999px;background:var(--brown-soft);color:var(--brown)}
+.pill.g{background:var(--gold-soft);color:var(--gold)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px}
+.kpi b{display:block;font-family:var(--f-display);font-size:1.9rem;line-height:1;color:var(--brown);font-variant-numeric:tabular-nums}
+.kpi span{font-size:.85rem;color:var(--muted)}
+.check{display:grid;gap:8px}
+.check label{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;cursor:pointer}
+.check input{width:18px;height:18px;margin-top:3px;accent-color:var(--ok)}
+.check label:has(input:checked){border-color:var(--ok)}
+.check label:has(input:checked) .ct{color:var(--muted);text-decoration:line-through}
+.check .ct b{display:block;font-weight:600}
+.check .ct small{color:var(--muted);font-size:.86rem}
+.progress{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.bar{flex:1;min-width:160px;height:10px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--ok);transition:width .3s}
+.tpl pre{white-space:pre-wrap;font-family:var(--f-body);font-size:.9rem;background:var(--bg);border:1px dashed var(--line);border-radius:8px;padding:14px;margin:8px 0 0;max-height:420px;overflow:auto}
+.copy{font:inherit;font-size:.85rem;font-weight:600;border:1px solid var(--brown);color:var(--brown);background:transparent;border-radius:8px;padding:5px 12px;cursor:pointer}
+.copy.done{border-color:var(--ok);color:var(--ok)}
+.row{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.note{font-size:.88rem;color:var(--muted)}
+.steps{counter-reset:s;display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--gold);color:#1a1405;font-weight:700;font-size:.9rem}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer .wrap{padding-block:18px 28px}
+.files{border:2px solid var(--brown);border-radius:12px;background:var(--surface);padding:18px 20px;display:grid;gap:14px;min-width:0}
+.files h3{margin:0;color:var(--brown)}
+.flist{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.fitem{display:grid;grid-template-columns:40px 1fr auto;gap:12px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--bg);min-width:0}
+.ficon{width:40px;height:40px;border-radius:8px;display:grid;place-items:center;font-size:.7rem;font-weight:700;letter-spacing:.04em;background:var(--gold-soft);color:var(--brown)}
+.fname{font-weight:600;overflow-wrap:anywhere}
+.fmeta{font-size:.82rem;color:var(--muted)}
+.btn{font:inherit;font-size:.86rem;font-weight:600;border-radius:8px;padding:6px 12px;border:1px solid var(--brown);background:var(--brown);color:var(--surface);text-decoration:none;white-space:nowrap}
+.empty{color:var(--muted);font-size:.92rem;margin:0}
+@media (max-width:620px){.fitem{grid-template-columns:40px 1fr}.fitem .btn{grid-column:1/-1;justify-self:start}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="orn" aria-hidden="true"></div>
+  <div class="wrap">
+    <svg class="shanyrak" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="27" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="30" cy="30" r="9" fill="none" stroke="currentColor" stroke-width="3"/><path d="M30 3v18M30 39v18M3 30h18M39 30h18M11 11l12.5 12.5M36.5 36.5L49 49M49 11L36.5 23.5M23.5 36.5L11 49" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+    <div>
+      <h1>Аттестация қоржыны</h1>
+      <p class="sub">Педагогтерді аттестаттау: пилоттық жоба (№159-НҚ), нормативтік құжаттар, бақылау парақтары және модератордан шеберге дейінгі санат талаптары бір жерде.</p>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Бөлімдер">
+  <div class="wrap" role="tablist">
+    <span class="grp">Құжаттар</span>
+    <a class="tab" role="tab" href="#pilot" data-t="pilot">Пилоттық жоба</a>
+    <a class="tab" role="tab" href="#normativ" data-t="normativ">Нормативтік құжаттар</a>
+    <a class="tab" role="tab" href="#baqylau" data-t="baqylau">Бақылау парақтары</a>
+    <a class="tab" role="tab" href="#ashyq" data-t="ashyq">Ашық сабақ / сыныптан тыс</a>
+    <a class="tab" role="tab" href="#buyryq159" data-t="buyryq159">№159 бұйрық</a>
+    <a class="tab" role="tab" href="#nusqau" data-t="nusqau">Әдістемелік нұсқау хат</a>
+    <span class="sep" aria-hidden="true"></span>
+    <span class="grp">Санаттар</span>
+    <a class="tab cat" role="tab" href="#moderator" data-t="moderator">Модератор</a>
+    <a class="tab cat" role="tab" href="#sarapshy" data-t="sarapshy">Сарапшы</a>
+    <a class="tab cat" role="tab" href="#zertteushi" data-t="zertteushi">Зерттеуші</a>
+    <a class="tab cat" role="tab" href="#sheber" data-t="sheber">Шебер</a>
+  </div>
+</nav>
+
+<main><div class="wrap">
+
+<section class="pane" id="p-pilot">
+  <div><h2>Пилоттық жоба</h2><p class="lead">2026 жылғы 1 қыркүйектен бастап педагогтерді аттестаттаудың жаңа моделі сынақтан өтуде. Қатысу ерікті.</p></div>
+  <div class="kpis">
+    <div class="kpi"><b>1.09</b><span>пилоттың басталуы, 2026</span></div>
+    <div class="kpi"><b>15.12</b><span>комиссия цифрлық профильдерді қарау мерзімінің соңы</span></div>
+    <div class="kpi"><b>31.12</b><span>№159-НҚ бұйрықтың қолданылу мерзімі, 2026</span></div>
+    <div class="kpi"><b>5 жыл</b><span>берілген санаттың жарамдылық мерзімі</span></div>
+  </div>
+  <div class="grid2">
+    <div class="box">
+      <h3>Кім қатыса алады</h3>
+      <ul class="clean">
+        <li><b>Екінші санаты</b> бар педагог → <span class="pill">педагог-модератор</span></li>
+        <li><b>Бірінші немесе жоғары санаты</b> бар педагог → <span class="pill">педагог-сарапшы</span></li>
+        <li>Ақпандағы біліктілік тестінен өтпей, шілдеде қайта тапсырмаған педагогтер пилотқа қатыса алады. Шілдеде қайта тапсырып, тағы өтпегендер қатыса алмайды.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Не өзгерді</h3>
+      <ul class="clean">
+        <li>Құжаттар «Ұстаз» платформасындағы <b>цифрлық профильге</b> мемлекеттік базалардан автоматты жиналады.</li>
+        <li>Эссе, ғылыми мақала, авторлық бағдарлама талабы алынды.</li>
+        <li>Ашық сабақ саны мен курс сағаты азайды (санат вкладкаларын қараңыз).</li>
+        <li>Тест жас мамандар, үзілістен кейін оралғандар, басшылар мен әдіскерлер үшін ғана сақталады.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="box">
+    <h3>Кезеңдер</h3>
+    <ol class="steps">
+      <li><div><b>Өтініш</b> — «Ұстаз» платформасы арқылы (модератор, сарапшы). Зерттеуші мен шебер санатына өтініш eGov порталы арқылы беріледі.</div></li>
+      <li><div><b>Цифрлық профильді тексеру</b> — еңбек өтілі, біліктілік, сертификаттар, жетістіктер.</div></li>
+      <li><div><b>Біліктілік бағалау</b> және қызмет нәтижелерін кешенді талдамалық қорыту.</div></li>
+      <li><div><b>Комиссия шешімі</b> (1 қыркүйек – 15 желтоқсан): «мәлімделген санатқа сәйкес» немесе «сәйкес емес».</div></li>
+    </ol>
+  </div>
+  <div class="box gold">
+    <h3>Бағалаудың негізгі өлшемдері</h3>
+    <p>Сабақ сапасы · оқушылардың білім нәтижесі · педагогтің мектеп өміріне қатысуы · кәсіби дамуы. Пилотта шешім балмен емес, «сәйкес / сәйкес емес» түрінде шығарылады.</p>
+  </div>
+</section>
+
+<section class="pane" id="p-normativ" hidden>
+  <div><h2>Аттестацияға қатысты нормативтік құжаттар</h2><p class="lead">Сілтемелер ресми дереккөздерге апарады. Құжаттың соңғы редакциясын Әділет базасынан тексеріңіз.</p></div>
+  <div class="docs">
+    <div class="doc"><div class="no">№159-НҚ</div><div><div class="t">Педагогтерді аттестаттаудан өткізу жөніндегі пилоттық жобаны өткізу тәртібі</div><div class="d">ҚР Оқу-ағарту министрінің м.а. бұйрығы, 05.06.2026. 01.08.2026 – 31.12.2026 аралығында қолданылады.</div></div><a href="https://prg.kz/m/amp/document/32711003" target="_blank" rel="noopener">Ашу ↗</a></div>
+    <div class="doc"><div class="no">№83</div><div><div class="t">Педагогтерді аттестаттаудан өткізу қағидалары мен шарттары</div><div class="d">ҚР БҒМ бұйрығы, 27.01.2016 (НҚА тізілімі № 13317). Негізгі қолданыстағы қағида.</div></div><a href="https://adilet.zan.kz/kaz/docs/V1600013317" target="_blank" rel="noopener">Әділет ↗</a></div>
+    <div class="doc"><div class="no">№190-НҚ</div><div><div class="t">№83 бұйрыққа өзгерістер енгізу туралы</div><div class="d">03.07.2026. Модератор/сарапшыға қызмет платформа арқылы, зерттеуші/шеберге eGov арқылы; құжаттар тізбесі жаңартылды.</div></div><a href="https://prg.kz/m/amp/document/37506512" target="_blank" rel="noopener">Ашу ↗</a></div>
+    <div class="doc"><div class="no">№72</div><div><div class="t">№83 бұйрыққа өзгерістер (2024)</div><div class="d">ҚР Оқу-ағарту министрінің бұйрығы, 02.04.2024, тіркеу № 34217.</div></div><a href="https://zakon.uchet.kz/kaz/docs/V2400034217" target="_blank" rel="noopener">Ашу ↗</a></div>
+    <div class="doc"><div class="no">Заң</div><div><div class="t">«Педагог мәртебесі туралы» ҚР Заңы, «Білім туралы» ҚР Заңы</div><div class="d">Аттестаттаудың құқықтық негізі, санаттың мерзімі мен үстемақылар.</div></div><a href="https://adilet.zan.kz/kaz" target="_blank" rel="noopener">Әділет ↗</a></div>
+    <div class="doc"><div class="no">Үлгілік</div><div><div class="t">Педагог лауазымдарының үлгілік біліктілік сипаттамалары</div><div class="d">Әр санатқа қажет еңбек өтілі мен кәсіби құзыреттер.</div></div><a href="https://adilet.zan.kz/kaz" target="_blank" rel="noopener">Әділет ↗</a></div>
+  </div>
+  <div class="box">
+    <h3>Жалпы тәртіппен аттестаттауға құжаттар (№83, 2026 ж. шілдедегі өзгерістермен)</h3>
+    <ul class="clean">
+      <li>Өтініш</li>
+      <li>Білімі туралы диплом (цифрлық жүйеде мәлімет болмаса)</li>
+      <li>Қайта даярлау курсы туралы құжат (бар болса)</li>
+      <li>Еңбек өтілін растайтын құжат (цифрлық жүйеде мәлімет болмаса)</li>
+      <li>Біліктілікті арттыру курсының сертификаты</li>
+      <li>Қолданыстағы санат куәлігі мен бұйрық (бар болса)</li>
+      <li>Кәсіби жетістіктер мен тәжірибені дәлелдейтін материалдар</li>
+      <li>Білім алушылардың жетістіктерін растайтын құжаттар</li>
+      <li>Эссе, 250–300 сөз (жалпы тәртіп бойынша; пилотта талап етілмейді)</li>
+    </ul>
+    <p class="note" style="margin-top:8px">Жеке куәлік, білім және еңбек өтілі туралы мәліметтер eGov арқылы автоматты алынады.</p>
+  </div>
+</section>
+
+<section class="pane" id="p-baqylau" hidden>
+  <div><h2>Бақылау парақтары</h2><p class="lead">Ашық сабақ пен сыныптан тыс іс-шараны бағалауға арналған дайын үлгілер. «Көшіру» батырмасын басып, Word құжатына қойыңыз.</p></div>
+
+  <div class="box tpl">
+    <div class="row"><h3 style="margin:0">Сабақты бақылау парағы (үлгі)</h3><button class="copy" type="button" data-copy="tpl1">Көшіру</button></div>
+    <pre id="tpl1">САБАҚТЫ БАҚЫЛАУ ПАРАҒЫ
+
+Мектеп: ____________________________   Күні: ____________
+Педагог (Т.А.Ә.): ________________________________________
+Пән: _______________   Сынып: ______   Тақырып: ____________
+Сабақ түрі: ашық сабақ / офлайн / онлайн
+Деңгейі: мектеп / аудан (қала) / облыс / республика
+Бақылаушы (Т.А.Ә., лауазымы): ____________________________
+
+Бағалау: 0 – көрінбейді, 1 – ішінара, 2 – толық көрінеді
+
+I. ЖОСПАРЛАУ                                              0  1  2
+1. Сабақ мақсаты оқу бағдарламасына сәйкес, нақты         □  □  □
+2. Бағалау критерийлері мақсатқа сай                     □  □  □
+3. Тапсырмалар саралап құрылған                          □  □  □
+
+II. ОҚЫТУ
+4. Оқушылардың белсенді оқуы ұйымдастырылған             □  □  □
+5. Уақыт тиімді пайдаланылған                            □  □  □
+6. Ерекше білім беруді қажет ететін балаларға қолдау     □  □  □
+7. АКТ / цифрлық ресурстар орынды қолданылған            □  □  □
+
+III. БАҒАЛАУ
+8. Қалыптастырушы бағалау, кері байланыс                 □  □  □
+9. Оқушылар өзін/бірін-бірі бағалайды                    □  □  □
+
+IV. НӘТИЖЕ ЖӘНЕ ТӘРБИЕ
+10. Сабақ мақсатына қол жеткізілді                       □  □  □
+11. Тәрбиелік құндылықтар (Адал азамат, т.б.) енгізілген □  □  □
+12. Рефлексия өткізілді                                  □  □  □
+
+Жалпы балл: _____ / 24
+
+Күшті жақтары: ___________________________________________
+Даму аймағы: _____________________________________________
+Ұсыныс: __________________________________________________
+
+Бақылаушы: ____________ (қолы)     Педагог: ____________ (қолы)</pre>
+  </div>
+
+  <div class="box tpl">
+    <div class="row"><h3 style="margin:0">Сыныптан тыс іс-шараны / сынып сағатын бақылау парағы (үлгі)</h3><button class="copy" type="button" data-copy="tpl2">Көшіру</button></div>
+    <pre id="tpl2">СЫНЫПТАН ТЫС ІС-ШАРАНЫ БАҚЫЛАУ ПАРАҒЫ
+
+Педагог: _____________________   Күні: ___________   Сынып: ______
+Іс-шара тақырыбы: _________________________________________
+Формасы: сынып сағаты / байқау / акция / дөңгелек үстел / жоба
+Ұзақтығы (сағат): ______
+Бағыты: «Адал азамат» / «Таза Қазақстан» / «Заң және тәртіп» / басқа ______
+
+Бағалау: 0 – жоқ, 1 – ішінара, 2 – толық                    0  1  2
+1. Мақсаты мен міндеттері айқын                            □  □  □
+2. Мазмұны оқушылардың жас ерекшелігіне сай                □  □  □
+3. Оқушылардың белсенді қатысуы                            □  □  □
+4. Ата-аналар / әлеуметтік серіктестер тартылған           □  □  □
+5. Ұлттық құндылықтар мен тәрбие бағдарламасымен байланыс  □  □  □
+6. Көрнекілік, цифрлық ресурстар                           □  □  □
+7. Қорытынды, рефлексия жасалды                            □  □  □
+
+Жалпы балл: _____ / 14
+
+Ұсыныс: __________________________________________________
+Бақылаушы: ____________   Педагог: ____________</pre>
+  </div>
+
+  <div class="box tpl">
+    <div class="row"><h3 style="margin:0">Тәжірибе тарату / әдістемелік сүйемелдеу парағы (зерттеуші, шебер)</h3><button class="copy" type="button" data-copy="tpl3">Көшіру</button></div>
+    <pre id="tpl3">ӘДІСТЕМЕЛІК СҮЙЕМЕЛДЕУ ЖҰРНАЛЫ
+
+Тәлімгер педагог: ______________________  Санаты: ______________
+Сүйемелдеудегі педагог: _________________  Пәні: ______________
+Оқу жылы: 2026–2027
+
+№ | Күні | Жұмыс түрі (сабаққа қатысу, кеңес, бірлескен жоспарлау, коучинг) | Нәтиже | Қолы
+1 |      |                                                                    |        |
+2 |      |                                                                    |        |
+3 |      |                                                                    |        |
+
+Сүйемелдеу қорытындысы: ____________________________________
+Әдістемелік бірлестік жетекшісі: ____________ (қолы)</pre>
+  </div>
+  <p class="note">Бұл — жалпы үлгілер. Мектебіңізде немесе аудандық әдістемелік кабинетте бекітілген нысан болса, соны қолданыңыз.</p>
+</section>
+
+<section class="pane" id="p-ashyq" hidden>
+  <div><h2>Ашық сабақ және сыныптан тыс жұмыс</h2><p class="lead">Пилоттық модельде ашық сабақтар бүкіл аттестаттау кезеңіне есептеледі, ал сынып сағаты мен сыныптан тыс іс-шараға барлық санатқа 6 сағат талап етіледі.</p></div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Санат</th><th>Ашық сабақ (кезең ішінде)</th><th>Міндетті деңгей</th><th>Сыныптан тыс / сынып сағаты</th></tr></thead>
+      <tbody>
+        <tr><td><span class="pill">Модератор</span></td><td>4 сабақ</td><td>Мектеп</td><td>6 сағат</td></tr>
+        <tr><td><span class="pill">Сарапшы</span></td><td>4 сабақ</td><td>Біреуі аудан/қала деңгейінде</td><td>6 сағат</td></tr>
+        <tr><td><span class="pill g">Зерттеуші</span></td><td>6 сабақ (3 офлайн + 3 онлайн)</td><td>Біреуі облыс деңгейінде</td><td>6 сағат</td></tr>
+        <tr><td><span class="pill g">Шебер</span></td><td>8 сабақ (4 офлайн + 4 онлайн)</td><td>Біреуі республика деңгейінде</td><td>6 сағат</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="grid2">
+    <div class="box">
+      <h3>Ашық сабаққа дайындалатын материал</h3>
+      <ul class="clean">
+        <li>Қысқа мерзімді жоспар (ҚМЖ)</li>
+        <li>Бақылау парақтары (кемінде 2 бақылаушы)</li>
+        <li>Сабақ туралы рефлексия / өзіндік талдау</li>
+        <li>Фото немесе бейнежазба (онлайн сабаққа сілтеме)</li>
+        <li>Аудан/облыс деңгейіндегі сабаққа: бұйрық немесе анықтама</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Сыныптан тыс іс-шараға</h3>
+      <ul class="clean">
+        <li>Іс-шара жоспары (мақсат, барысы, рефлексия)</li>
+        <li>Бақылау парағы</li>
+        <li>Фотоесеп, мектеп сайтындағы немесе әлеуметтік желідегі жарияланым</li>
+        <li>Тақырып мысалдары: «Таза Қазақстан», «Заң және тәртіп», «Адал азамат»</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="pane" id="p-buyryq159" hidden>
+  <div><h2>№159-НҚ бұйрық</h2><p class="lead">ҚР Оқу-ағарту министрінің м.а. 2026 жылғы 5 маусымдағы бұйрығы. Кейбір құқықтық базаларда бекітілген тәртіп мәтінінде №157-НҚ деп көрсетілген, сондықтан нөмірін ресми мәтіннен тексеріңіз.</p></div>
+  <div class="grid2">
+    <div class="box">
+      <h3>Бұйрықтың негізгі тармақтары</h3>
+      <ul class="clean">
+        <li>2026 жылғы 1 қыркүйектен бастап аттестаттаудың пилоттық жобасы іске қосылады.</li>
+        <li>Пилоттық жобаны өткізу тәртібі бекітіледі.</li>
+        <li>Орта білім беру комитеті әдіснамалық сүйемелдеуді қамтамасыз етеді.</li>
+        <li>Цифрландыру департаменті техникалық сүйемелдеуді қамтамасыз етеді.</li>
+        <li>Күшіне енуі: 01.08.2026; қолданылуы: 31.12.2026 қоса алғанда.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Тәртіптің мәні</h3>
+      <ul class="clean">
+        <li>Өтініш арнайы цифрлық платформа арқылы беріледі.</li>
+        <li>Цифрлық профиль мемлекеттік дерекқорлардан автоматты қалыптасады.</li>
+        <li>Профильді тексеруден өткен педагог біліктілік бағалауға және кешенді талдамалық қорытуға жіберіледі.</li>
+        <li>Комиссия шешімі: сәйкес / сәйкес емес. Санат 5 жылға беріледі.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="box gold"><p style="margin:0">Толық мәтін: <a href="https://prg.kz/m/amp/document/32711003" target="_blank" rel="noopener">prg.kz ↗</a> · Әділет базасынан «159-НҚ» деп іздеңіз: <a href="https://adilet.zan.kz/kaz" target="_blank" rel="noopener">adilet.zan.kz ↗</a></p></div>
+</section>
+
+<section class="pane" id="p-nusqau" hidden>
+  <div><h2>Әдістемелік нұсқау хат</h2><p class="lead">2026–2027 оқу жылына арналған нұсқаулық-әдістемелік хатты Ы. Алтынсарин атындағы Ұлттық білім академиясы шығарады. Хаттан аттестацияға қажет бөлімдерді осы тізім бойынша қараңыз.</p></div>
+  <div class="grid2">
+    <div class="box">
+      <h3>Аттестацияға қатысты бөлімдер</h3>
+      <ul class="clean">
+        <li>Оқу жоспары мен пәндер бойынша сағат жүктемесі</li>
+        <li>Тәрбие жұмысы: «Адал азамат» бағдарламасы, сынып сағаттары</li>
+        <li>Инклюзивті білім беру, ерекше қажеттіліктері бар балалармен жұмыс</li>
+        <li>Оқушы жетістіктерін бағалау (БЖБ, ТЖБ)</li>
+        <li>Цифрлық ресурстар мен ЖИ құралдарын қолдану</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Оқу жылының мерзімдері 2026–2027</h3>
+      <ul class="clean">
+        <li>Басталуы: 1 қыркүйек 2026</li>
+        <li>Күзгі демалыс: 26 қазан – 1 қараша</li>
+        <li>Қысқы демалыс: 28 желтоқсан – 10 қаңтар</li>
+        <li>Көктемгі демалыс: 22–28 наурыз 2027</li>
+        <li>Аяқталуы: 25 мамыр 2027</li>
+      </ul>
+    </div>
+  </div>
+  <div class="box gold"><p style="margin:0">Хаттың ресми мәтіні: <a href="https://uba.edu.kz" target="_blank" rel="noopener">uba.edu.kz ↗</a> (Ұлттық білім академиясы, «Нұсқаулық-әдістемелік хаттар» бөлімі).</p></div>
+</section>
+
+<section class="pane" id="p-cat" hidden>
+  <div class="row" style="align-items:flex-end">
+    <div><h2 id="c-title"></h2><p class="lead" id="c-lead"></p></div>
+    <span class="pill g" id="c-badge"></span>
+  </div>
+  <div class="kpis" id="c-kpis"></div>
+  <div class="box">
+    <div class="progress"><b id="c-count"></b><div class="bar"><i id="c-bar"></i></div></div>
+    <p class="note" style="margin:6px 0 0">Дайын құжатты белгілеңіз. Белгілер тек осы құрылғыда сақталады.</p>
+  </div>
+  <div class="check" id="c-list"></div>
+  <div class="box gold" id="c-score"></div>
+</section>
+
+<!-- Файлдар мен сілтемелер панелі: белсенді бөлімнің соңына көшіріледі -->
+<div class="files" id="files">
+  <div class="row"><h3 id="f-title">Осы бөлімнің файлдары</h3><span class="pill g" id="f-count">0 файл</span></div>
+  <ul class="flist" id="f-list"></ul>
+</div>
+
+</div></main>
+
+<footer><div class="wrap">Дереккөздер: ҚР Оқу-ағарту министрлігі, №159-НҚ (05.06.2026), №83 (27.01.2016) және 03.07.2026 өзгерістері, informburo.kz, inbusiness.kz. Ақпарат 2026 жылғы 10 қарашадағы жағдай бойынша. Шешім қабылдар алдында ресми мәтінді тексеріңіз.</div></footer>
+
+<script>
+/* =====================================================================
+   ФАЙЛДАР МЕН СІЛТЕМЕЛЕР — осы жерді өзіңіз толтырасыз.
+   Файлды Google Drive-қа жүктеп, «Сілтемесі бар барлық адам көре алады»
+   етіп ашыңыз да, сілтемесін төмендегі тізімге қосыңыз.
+   Үлгі:  { name:"ҚМЖ, 5-сынып", url:"https://drive.google.com/..." },
+   Бөлімдер: pilot, normativ, baqylau, ashyq, buyryq159, nusqau,
+             moderator, sarapshy, zertteushi, sheber
+   ===================================================================== */
+const LINKS = {
+  pilot:      [],
+  normativ:   [],
+  baqylau:    [],
+  ashyq:      [],
+  buyryq159:  [],
+  nusqau:     [],
+  moderator:  [],
+  sarapshy:   [],
+  zertteushi: [],
+  sheber:     []
+};
+
+const CATS={
+ moderator:{name:"Педагог-модератор",badge:"Пилот: 2-санаттан → модератор",lead:"Білім беру ұйымы деңгейінде тәжірибесін көрсететін педагог.",
+  kpis:[["2+","жыл еңбек өтілі"],["4","ашық сабақ (кезеңде)"],["36","сағат курс"],["6","сағат сыныптан тыс"]],
+  docs:[
+   ["Өтініш","«Ұстаз» платформасы арқылы"],
+   ["Қолданыстағы санат куәлігі мен бұйрық","2-санат бар болса"],
+   ["Біліктілікті арттыру курсының сертификаты","Кемінде 36 сағат, QR-коды бар"],
+   ["4 ашық сабақтың ҚМЖ және бақылау парақтары","Мектеп деңгейінде"],
+   ["Сынып сағаты / сыныптан тыс іс-шара жоспарлары","Барлығы 6 сағат"],
+   ["Шығармашылық (жұмыс) топқа немесе жобаға қатысу туралы анықтама","Әлеуметтік, ғылыми, зерттеу, волонтерлік жоба"],
+   ["Оқушылардың жетістіктерін растайтын құжаттар","Сапа, олимпиада, байқау"],
+   ["Кәсіби жетістіктер","Грамота, сертификат, марапаттар"]],
+  ozp:"60%"},
+ sarapshy:{name:"Педагог-сарапшы",badge:"Пилот: 1-санат / жоғары санаттан → сарапшы",lead:"Тәжірибесін аудан (қала) деңгейінде тарататын педагог.",
+  kpis:[["3+","жыл еңбек өтілі"],["4","ашық сабақ, 1-уі аудан/қала"],["36","сағат курс"],["6","сағат сыныптан тыс"]],
+  docs:[
+   ["Өтініш","«Ұстаз» платформасы арқылы"],
+   ["Қолданыстағы санат куәлігі мен бұйрық","1-санат немесе жоғары санат"],
+   ["Біліктілікті арттыру курсының сертификаты","Кемінде 36 сағат"],
+   ["4 ашық сабақтың ҚМЖ және бақылау парақтары","Біреуі аудан/қала деңгейінде, растайтын анықтама"],
+   ["Тәжірибе таратуды растайтын құжат","Аудан/қала деңгейінде (семинар, шеберлік сабақ)"],
+   ["Сынып сағаты / сыныптан тыс іс-шара жоспарлары","Барлығы 6 сағат"],
+   ["Шығармашылық топқа немесе жобаға қатысу туралы анықтама","Мектеп деңгейінде"],
+   ["Оқушылардың жетістіктерін растайтын құжаттар","Аудан деңгейіндегі нәтижелер"]],
+  ozp:"70%"},
+ zertteushi:{name:"Педагог-зерттеуші",badge:"Өтініш eGov арқылы",lead:"Тәжірибесін облыс деңгейінде таратып, әріптестерін сүйемелдейтін педагог.",
+  kpis:[["4+","жыл еңбек өтілі"],["6","сабақ: 3 офлайн + 3 онлайн"],["72","сағат курс"],["2","педагогке сүйемелдеу"]],
+  docs:[
+   ["Өтініш","eGov порталы арқылы"],
+   ["Қолданыстағы санат куәлігі мен бұйрық",""],
+   ["Біліктілікті арттыру курсының сертификаты","Кемінде 72 сағат"],
+   ["Тәуекел тобындағы балаларды анықтау курсының сертификаты","Жаңа міндетті талап"],
+   ["6 ашық сабақтың ҚМЖ, бақылау парақтары, онлайн сабақ сілтемелері","Біреуі облыс деңгейінде"],
+   ["Облыс деңгейінде тәжірибе таратуды растайтын құжат",""],
+   ["Кемінде 2 педагогке әдістемелік сүйемелдеу жоспары мен жұрналы","Мектеп бұйрығымен бекітілген"],
+   ["Сынып сағаты / сыныптан тыс іс-шара жоспарлары","Барлығы 6 сағат"],
+   ["Шығармашылық топқа немесе жобаға қатысу анықтамасы",""],
+   ["Оқушылардың жетістіктерін растайтын құжаттар","Облыс деңгейіндегі нәтижелер"]],
+  ozp:"80%"},
+ sheber:{name:"Педагог-шебер",badge:"Өтініш eGov арқылы",lead:"Тәжірибесін республика деңгейінде таратып, менторлық жүргізетін педагог.",
+  kpis:[["5+","жыл еңбек өтілі"],["8","сабақ: 4 офлайн + 4 онлайн"],["72","сағат курс"],["3","педагогке сүйемелдеу"]],
+  docs:[
+   ["Өтініш","eGov порталы арқылы"],
+   ["Қолданыстағы санат куәлігі мен бұйрық",""],
+   ["Біліктілікті арттыру курсының сертификаты","Кемінде 72 сағат"],
+   ["Тәуекел тобындағы балаларды анықтау курсының сертификаты",""],
+   ["8 ашық сабақтың ҚМЖ, бақылау парақтары, онлайн сабақ сілтемелері","Біреуі республика деңгейінде"],
+   ["Республика деңгейінде тәжірибе таратуды растайтын құжат",""],
+   ["Кемінде 3 педагогке әдістемелік сүйемелдеу жоспары мен жұрналы",""],
+   ["Менторлық, тәлімгерлік, волонтерлік белсенділікті растайтын құжаттар","Қосымша ескеріледі"],
+   ["Сынып сағаты / сыныптан тыс іс-шара жоспарлары","Барлығы 6 сағат"],
+   ["Шығармашылық топқа немесе жобаға қатысу анықтамасы",""],
+   ["Оқушылардың жетістіктерін растайтын құжаттар","Республикалық, халықаралық нәтижелер"]],
+  ozp:"90%"}
+};
+const DOCTABS=["pilot","normativ","baqylau","ashyq","buyryq159","nusqau"];
+const SEC_NAMES={pilot:"Пилоттық жоба",normativ:"Нормативтік құжаттар",baqylau:"Бақылау парақтары",ashyq:"Ашық сабақ / сыныптан тыс",buyryq159:"№159 бұйрық",nusqau:"Әдістемелік нұсқау хат",moderator:"Педагог-модератор",sarapshy:"Педагог-сарапшы",zertteushi:"Педагог-зерттеуші",sheber:"Педагог-шебер"};
+const store={get(k){try{return JSON.parse(localStorage.getItem(k)||"{}")}catch(e){return{}}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const $=id=>document.getElementById(id);
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+
+function renderCat(id){
+  const c=CATS[id],saved=store.get("chk-"+id);
+  $("c-title").textContent=c.name;
+  $("c-lead").textContent=c.lead;
+  $("c-badge").textContent=c.badge;
+  $("c-kpis").innerHTML=c.kpis.map(k=>`<div class="kpi"><b>${k[0]}</b><span>${esc(k[1])}</span></div>`).join("");
+  $("c-list").innerHTML=c.docs.map((d,i)=>`<label for="c-${id}-${i}"><input type="checkbox" id="c-${id}-${i}" data-i="${i}" ${saved[i]?"checked":""}><span class="ct"><b>${esc(d[0])}</b>${d[1]?`<small>${esc(d[1])}</small>`:""}</span><span class="pill">${i+1}</span></label>`).join("");
+  $("c-score").innerHTML=`<h3>Бағалау және балл</h3><p><b>Пилоттық модельде</b> комиссия балл қоймайды: цифрлық профиль мен материалдар бойынша «сәйкес» немесе «сәйкес емес» шешімі шығады.</p><p><b>Тест сақталатын педагогтерге</b> (жас мамандар, үзілістен кейін оралғандар, басшылар, әдіскерлер) бұрынғы ереже бойынша осы санаттың шекті деңгейі — <b>${c.ozp}</b>. Биылғы шекті деңгейді ресми хабарландырудан тексеріңіз.</p>`;
+  updateProgress(id);
+  document.querySelectorAll("#c-list input").forEach(cb=>cb.addEventListener("change",()=>{const s=store.get("chk-"+id);s[cb.dataset.i]=cb.checked;store.set("chk-"+id,s);updateProgress(id)}));
+}
+function updateProgress(){
+  const all=document.querySelectorAll("#c-list input"),done=[...all].filter(x=>x.checked).length;
+  $("c-count").textContent=`${done} / ${all.length} құжат дайын`;
+  $("c-bar").style.width=(all.length?done/all.length*100:0)+"%";
+}
+function iconFor(url){
+  const u=url.toLowerCase();
+  if(u.includes(".pdf"))return"PDF";
+  if(/\.(jpe?g|png|gif|webp)/.test(u))return"IMG";
+  if(u.includes("youtu")||/\.(mp4|webm)/.test(u))return"VID";
+  if(u.includes("docs.google.com/document"))return"DOC";
+  if(u.includes("docs.google.com/presentation"))return"PPT";
+  if(u.includes("docs.google.com/spreadsheets"))return"XLS";
+  return"LINK";
+}
+function placeFiles(h){
+  const pane=CATS[h]?$("p-cat"):$("p-"+h);
+  pane.appendChild($("files"));
+  $("f-title").textContent=SEC_NAMES[h]+" — файлдар";
+  const list=LINKS[h]||[];
+  $("f-count").textContent=list.length+" файл";
+  $("f-list").innerHTML=list.length
+    ? list.map(f=>`<li class="fitem"><span class="ficon">${iconFor(f.url)}</span><div style="min-width:0"><div class="fname">${esc(f.name||"Атаусыз")}</div><div class="fmeta">${esc(f.note||"Сілтеме")}</div></div><a class="btn" href="${esc(f.url)}" target="_blank" rel="noopener">Ашу</a></li>`).join("")
+    : `<li class="empty">Бұл бөлімде әзірге файл жоқ.</li>`;
+}
+function show(){
+  let h=location.hash.slice(1);
+  if(!DOCTABS.includes(h)&&!CATS[h])h="pilot";
+  document.querySelectorAll("section.pane").forEach(s=>s.hidden=true);
+  if(CATS[h]){renderCat(h);$("p-cat").hidden=false}
+  else $("p-"+h).hidden=false;
+  document.querySelectorAll(".tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.t===h?"true":"false"));
+  placeFiles(h);
+}
+window.addEventListener("hashchange",()=>{show();window.scrollTo({top:0})});
+document.querySelectorAll(".copy").forEach(b=>b.addEventListener("click",()=>{
+  const el=$(b.dataset.copy),txt=el.textContent;
+  const ok=()=>{b.textContent="Көшірілді";b.classList.add("done");setTimeout(()=>{b.textContent="Көшіру";b.classList.remove("done")},1800)};
+  const fallback=()=>{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent="Мәтін белгіленді, көшіріңіз"};
+  try{navigator.clipboard.writeText(txt).then(ok,fallback)}catch(e){fallback()}
+}));
+show();
+</script>
+</body>
+</html>
